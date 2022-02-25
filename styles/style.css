@@ -13,11 +13,6 @@
 
 }
 
-.borders {
-  border: 3px solid red;
-}
-
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -49,17 +44,17 @@
 }
 
 .header__title {
+  margin: 0 0 0 64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  position: absolute;
   align-self: center;
-  left: 64px;
   z-index: 1;
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -114,19 +109,24 @@
 }
 
 .two-columns__paragraph {
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 30px;
+  /*margin-top: 0;*/
   line-height: 34px;
   font-size: 24px;
 }
 
-.two-columns__span {
+.two-columns__paragraph:last-child {
+  padding: 0;
+}
+
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .digits {
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,14 +159,6 @@
   padding: 0;
 }
 
-.table-line {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
 .table__cell {
   width: 250px;
   margin: 60px 0 0 0;
@@ -185,7 +177,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
   background-image: url('../images/feynman.png');
@@ -206,7 +198,7 @@
 
 .feynman__subtitle {
   width: auto;
-  margin-top: 70px;
+  margin: 70px 0 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -279,9 +271,11 @@
   color: #f2f2f2;
 }
 
-.footer__column-content-copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place-footer {
@@ -289,16 +283,14 @@
 }
 
 .footer__author {
-  margin: 0;
-  position: absolute;
-  left: 0;
-  bottom: 18px;
+  margin: 18px 0;
+  align-self: flex-start;
   line-height: 25px;
   font-size: 18px;
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin:0 0 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
