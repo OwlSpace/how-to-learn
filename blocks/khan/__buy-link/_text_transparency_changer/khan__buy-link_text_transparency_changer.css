@@ -1,0 +1,4 @@
+.khan__buy-link_text_transparency_changer:hover{
+  transition-duration: 0.7s;
+  opacity: 0.5;
+}
