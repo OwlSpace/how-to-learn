@@ -7,9 +7,9 @@
   font-size: 36px;
   color: #2f80ed;
   text-decoration: none;
+  transition-duration: 0.7s;
 }
 
 .feynman__link:hover{
-  transition-duration: 0.7s;
   opacity: 0.5;
 }
